@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: admin
+  cloud:
+    config:
+      uri: http://config:9000
+      fail-fast: true
+server:
+  port: 8080
+
+feign:
+  hystrix:
+    enabled: true
